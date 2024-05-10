@@ -9,8 +9,8 @@
 		<version>${revision}</version>
 	</parent>
 
-	<artifactId>rest-module</artifactId>
-	<name>rest-module</name>
+	<artifactId>interactor-module</artifactId>
+	<name>interactor-module</name>
 	<packaging>jar</packaging>
 
 	<properties>
@@ -19,14 +19,8 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>br.com.source.knowledge</groupId>
-			<artifactId>interactor-module</artifactId>
-		</dependency>
-
-
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
 		<dependency>
@@ -35,5 +29,14 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>

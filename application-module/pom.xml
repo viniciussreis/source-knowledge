@@ -20,6 +20,10 @@
 	<dependencies>
 		<dependency>
 			<groupId>br.com.source.knowledge</groupId>
+			<artifactId>interactor-module</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>br.com.source.knowledge</groupId>
 			<artifactId>rest-module</artifactId>
 		</dependency>
 

@@ -13,6 +13,7 @@
     <modules>
         <module>application-module</module>
         <module>rest-module</module>
+        <module>interactor-module</module>
     </modules>
 
     <parent>
@@ -39,6 +40,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>br.com.source.knowledge</groupId>
+                <artifactId>interactor-module</artifactId>
+                <version>${revision}</version>
+            </dependency>
             <dependency>
                 <groupId>br.com.source.knowledge</groupId>
                 <artifactId>rest-module</artifactId>

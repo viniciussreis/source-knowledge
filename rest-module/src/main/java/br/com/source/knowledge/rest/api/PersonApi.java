@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.*;
 public interface PersonApi {
 
     @PostMapping
-    ResponseEntity<Void> insert(@RequestBody PersonViewModel personViewModel);
+    ResponseEntity<PersonViewModel> insert(@RequestBody PersonViewModel personViewModel);
 
     @GetMapping(value = "/{id}")
-    ResponseEntity<PersonViewModel> findById(@PathVariable Long id);
+    ResponseEntity<PersonViewModel> findById(@PathVariable String id);
 }

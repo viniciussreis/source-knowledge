@@ -22,14 +22,16 @@ public class PersonController implements PersonApi {
     private final PersonToPersonViewModelConverter personToPersonViewModelConverter;
 
     @Override
-    public ResponseEntity<Void> insert(PersonViewModel personViewModel) {
+    public ResponseEntity<PersonViewModel> insert(PersonViewModel personViewModel) {
         var person = personViewModelToPersonConverter.convert(personViewModel);
-        insertPersonService.insert(person);
-        return ResponseEntity.ok().build();
+        var personInserted = insertPersonService.insert(person);
+        var viewModel = personToPersonViewModelConverter.convert(personInserted);
+
+        return ResponseEntity.ok(viewModel);
     }
 
     @Override
-    public ResponseEntity<PersonViewModel> findById(Long id) {
+    public ResponseEntity<PersonViewModel> findById(String id) {
         var person = findPersonService.findById(id);
         var viewModel = personToPersonViewModelConverter.convert(person);
         return ResponseEntity.ok(viewModel);

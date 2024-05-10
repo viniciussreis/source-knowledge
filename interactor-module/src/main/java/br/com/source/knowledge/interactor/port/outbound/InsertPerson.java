@@ -1,8 +1,8 @@
-package br.com.source.knowledge.interactor.port.inbound;
+package br.com.source.knowledge.interactor.port.outbound;
 
 import br.com.source.knowledge.interactor.domain.Person;
 
-public interface InsertPersonUseCase {
+public interface InsertPerson {
 
     Person insert(Person person);
 

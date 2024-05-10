@@ -24,6 +24,10 @@
 		</dependency>
 		<dependency>
 			<groupId>br.com.source.knowledge</groupId>
+			<artifactId>mongo-repository-module</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>br.com.source.knowledge</groupId>
 			<artifactId>rest-module</artifactId>
 		</dependency>
 

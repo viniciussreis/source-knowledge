@@ -4,6 +4,6 @@ import br.com.source.knowledge.interactor.domain.Person;
 
 public interface FindPersonUseCase {
 
-    Person findById(Long id);
+    Person findById(String id);
 
 }

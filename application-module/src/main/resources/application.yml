@@ -4,6 +4,10 @@ server:
 spring:
   application:
     name: source-knowledge
+  data:
+    mongodb:
+      uri: mongodb://root:example@localhost:27017/
+      database: source-knowledge
 
 logging:
   level:

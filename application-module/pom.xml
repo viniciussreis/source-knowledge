@@ -30,6 +30,10 @@
 			<groupId>br.com.source.knowledge</groupId>
 			<artifactId>rest-module</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>br.com.source.knowledge</groupId>
+			<artifactId>sqs-queue-module</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -41,6 +45,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
 	</dependencies>
 
 	<build>

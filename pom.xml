@@ -15,6 +15,7 @@
         <module>interactor-module</module>
         <module>mongo-repository-module</module>
         <module>rest-module</module>
+        <module>sqs-queue-module</module>
     </modules>
 
     <parent>
@@ -54,6 +55,11 @@
             <dependency>
                 <groupId>br.com.source.knowledge</groupId>
                 <artifactId>rest-module</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>br.com.source.knowledge</groupId>
+                <artifactId>sqs-queue-module</artifactId>
                 <version>${revision}</version>
             </dependency>
 

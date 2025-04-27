@@ -8,6 +8,14 @@ spring:
     mongodb:
       uri: mongodb://root:example@localhost:27017/
       database: source-knowledge
+  cloud:
+    aws:
+      sqs:
+        region: ${AWS_REGION}
+        queue-url: ${AWS_SQS_QUEUE_URL}
+        queue-name: ${AWS_SQS_QUEUE_NAME}
+        access-key: ${AWS_ACCESS_KEY}
+        secret-key: ${AWS_SECRET_ACCESS_KEY}
 
 logging:
   level:
